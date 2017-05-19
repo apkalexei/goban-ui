@@ -9,9 +9,9 @@ import { JobsComponent } from './jobs/jobs.component';
 import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
-    {path: '', component: AppComponent},
     {path: 'jobs', component: JobsComponent},
-    {path: 'about', component: AboutComponent}
+    {path: 'about', component: AboutComponent},
+    {path: '', component: AppComponent}
 ];
 
 @NgModule({
@@ -27,7 +27,7 @@ const appRoutes: Routes = [
         HttpModule
     ],
     providers: [],
-    bootstrap: [AppComponent, JobsComponent, AboutComponent]
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }
