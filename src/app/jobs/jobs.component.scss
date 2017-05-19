@@ -1,0 +1,78 @@
+@import '~app/_variables.scss';
+
+#kanban-container {
+  width: 100%;
+  height: 81vh;
+  min-width: 1167px;
+
+  .jobPane {
+    height: 15vw;
+    width: 15vw;
+    background-color: $nav-button-color;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: .25em;
+    font-size: .75vw;
+
+    .description {
+      position: relative;
+      height: 80%;
+      overflow: hidden;
+    }
+
+    .workflow {
+      position: relative;
+      padding-top: 1em;
+      height: 15%;
+    }
+
+    .workflow-left {
+      float: left;
+      padding-right: .15em;
+    }
+
+    .workflow-right {
+      float: right;
+    }
+
+    h2, i {
+      color: #eeeeee;
+    }
+
+    .jobDescription {
+      width: 80%;
+      margin: auto auto;
+      height: 15vw;
+      overflow: hidden;
+    }
+  }
+
+  #left {
+    padding: .25em;
+    border: 1px dotted black;
+    margin-right: .5em;
+    float: left;
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: scroll;
+  }
+
+  #middle {
+    padding: .25em;
+    border: 1px dotted black;
+    float: left;
+    width: 32%;
+    height: 100%;
+  }
+
+  #right {
+    padding: .25em;
+    border: 1px dotted black;
+    margin-left: .5em;
+    float: left;
+    width: 32%;
+    height: 100%;
+  }
+}
